@@ -23,12 +23,12 @@ pipeline {
                     }
                     
                 }
-                stage('Test On Master') {
+                stage('Test On Built-In Node') {
                     agent {
-                        label "master"
+                        label "Built-In Node"
                     }
                     steps {
-						echo "Task1 on Master"
+						echo "Task1 on Built-In Node"
 					}
                 }
             }
